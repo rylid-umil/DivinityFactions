@@ -31,6 +31,7 @@
       "mirror": false,
       "alternate": false,
       "reload": 30,
+      "shootSound": "laserpew",
       "smokeEffect": "shootSmallSmoke"
       "ejectEffect": {
         "type": "ParticleEffect",
