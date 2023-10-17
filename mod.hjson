@@ -6,7 +6,11 @@
     displayName: "Divinity Factions",
     author: "Cle",
     subtitle:"go figure. WIP",
-    description: "its my 2nd mod, for the lore heavy side of new content. \ninternal name: divinity-inc"
+    description: 
+'''
+its my 2nd mod, for the lore heavy side of new content. 
+internal name: divinity-inc
+'''
     hideBrowser: false,
     hidden: false,
     dependencies: []
