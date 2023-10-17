@@ -1,0 +1,121 @@
+{
+  "name": "clau",
+  "localizedName": "[red]Clau",
+  "description": "[red]A small, speedy armored unit created by the Arcus. It shoots a tiny laser at nearby enemies.",
+  "health": 1270,
+  "speed": 5,
+  "armor": 4,
+  "drag": 0.03,
+  "accel": 0.08,
+  "outlineColor": "141412ff",
+  "flying": true,
+  "targetAir": true,
+  "hitSize": 9,
+  "commandLimit": 8,
+  "deathExplosionEffect": {
+    "type": "ParticleEffect",
+    "particles": 12,
+    "colorFrom": "FF6666FF",
+    "colorTo": "FF6666FF",
+    "line": true,
+    "lifetime": 40,
+    "length": 40,
+    "sizeFrom": 30
+  },
+  "weapons": [
+    {
+      "name": "clau-weapon",
+      "x": 0,
+      "y": 0,
+      "mirror": false,
+      "alternate": false,
+      "reload": 30,
+      "ejectEffect": {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "region": "bullet",
+        "casingFlip": true,
+        "offset": -90,
+        "cone": 20,
+        "interp": "circleOut",
+        "sizeFrom": 7,
+        "sizeTo": 5,
+        "colorFrom": "FF6666FF",
+        "colorTo": "7D1919CC",
+        "randLength": false,
+        "spin": -3
+      },
+      "bullet": {
+        "type": "LaserBoltBulletType",
+        "frontColor": "FF6666FF",
+        "backColor": "DD4444FF",
+        "lifetime": 30,
+        "speed": 4,
+        "damage": 27,
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "colorFrom": "FF6666FF",
+          "colorTo": "FF6666FF",
+          "line": true,
+          "lifetime": 11,
+          "length": 19,
+          "sizeFrom": 17
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "colorFrom": "FF6666FF",
+          "colorTo": "FF6666FF",
+          "line": true,
+          "lifetime": 11,
+          "length": 19,
+          "sizeFrom": 17
+        },
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "colorFrom": "FF6666FF",
+          "colorTo": "FF6666FF",
+          "line": true,
+          "lifetime": 11,
+          "length": 19,
+          "sizeFrom": 17
+        },
+        "despawnHit": false
+      }
+    },
+    {
+      "name": "clau-death-lightning",
+      "x": 0,
+      "y": 0,
+      "reload": 99999,
+      "shootSound": "spark",
+      "inaccuracy": 360,
+      "shoot": {
+        "shots": 8,
+        "shotDelay": 0
+      },
+      "shootCone": 360,
+      "ignoreRotation": true,
+      "shootOnDeath": true,
+      "bullet": {
+        "type": "LightningBulletType",
+        "damage": 20,
+        "lightningColor": "FF6666FF",
+        "lightningLength": 8,
+        "lightningLengthRand": 2,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "colorFrom": "FF6666FF",
+          "colorTo": "FF6666FF",
+          "line": true,
+          "lifetime": 11,
+          "length": 19,
+          "sizeFrom": 17
+        }
+      }
+    }
+  ]
+}
