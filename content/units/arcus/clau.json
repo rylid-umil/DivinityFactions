@@ -13,6 +13,7 @@
   "hitSize": 9,
   "commandLimit": 8,
   "lowAltitude": true,
+  "circleTarget": true,
   "deathExplosionEffect": {
     "type": "ParticleEffect",
     "particles": 12,
@@ -27,13 +28,17 @@
     {
       "name": "clau-gun",
       "x": 0,
-      "y": 0,
+      "y": -3,
       "mirror": false,
       "alternate": false,
       "reload": 30,
-      "recoil": 4,
+      "recoil": 2,
       "shootSound": "laserpew",
       "smokeEffect": "shootSmallSmoke"
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 6
+      },
       "ejectEffect": {
         "type": "ParticleEffect",
         "particles": 1,
@@ -55,7 +60,7 @@
         "backColor": "DD4444FF",
         "lifetime": 30,
         "speed": 4,
-        "damage": 27,
+        "damage": 16,
         "homingRadius": 70,
         "homingPower": 0.09,
         "shootEffect": {
