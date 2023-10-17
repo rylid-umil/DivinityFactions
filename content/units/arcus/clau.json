@@ -1,7 +1,7 @@
 {
   "name": "clau",
   "localizedName": "[red]Clau",
-  "description": "[red]A small, speedy armored unit created by the Arcus. It shoots a tiny laser at nearby enemies.",
+  "description": "[red]A small, speedy armored unit created by the Arcus. It shoots tiny homing lasers at nearby enemies.",
   "health": 1270,
   "speed": 5,
   "armor": 4,
@@ -12,15 +12,16 @@
   "targetAir": true,
   "hitSize": 9,
   "commandLimit": 8,
+  "lowAltitude": true,
   "deathExplosionEffect": {
     "type": "ParticleEffect",
     "particles": 12,
     "colorFrom": "FF6666FF",
     "colorTo": "FF6666FF",
-    "line": true,
     "lifetime": 40,
+    "interp": "circleOut",
     "length": 40,
-    "sizeFrom": 30
+    "sizeFrom": 50
   },
   "weapons": [
     {
@@ -35,11 +36,11 @@
         "particles": 1,
         "region": "bullet",
         "casingFlip": true,
-        "offset": -90,
+        "offset": 0,
         "cone": 20,
         "interp": "circleOut",
-        "sizeFrom": 7,
-        "sizeTo": 5,
+        "sizeFrom": 3,
+        "sizeTo": 2,
         "colorFrom": "FF6666FF",
         "colorTo": "7D1919CC",
         "randLength": false,
@@ -52,6 +53,8 @@
         "lifetime": 30,
         "speed": 4,
         "damage": 27,
+        "homingRadius": 70,
+        "hovingPower": 0.06,
         "shootEffect": {
           "type": "ParticleEffect",
           "particles": 7,
@@ -99,6 +102,8 @@
       "shootCone": 360,
       "ignoreRotation": true,
       "shootOnDeath": true,
+      "mirror": false,
+      "alternate": false,
       "bullet": {
         "type": "LightningBulletType",
         "damage": 20,
