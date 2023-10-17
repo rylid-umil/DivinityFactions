@@ -25,7 +25,7 @@
   },
   "weapons": [
     {
-      "name": "clau-weapon",
+      "name": "clau-gun",
       "x": 0,
       "y": 0,
       "mirror": false,
