@@ -18,10 +18,10 @@
     "particles": 12,
     "colorFrom": "FF6666FF",
     "colorTo": "FF6666FF",
-    "lifetime": 40,
+    "lifetime": 80,
     "interp": "circleOut",
     "length": 40,
-    "sizeFrom": 50
+    "sizeFrom": 20
   },
   "weapons": [
     {
@@ -31,6 +31,7 @@
       "mirror": false,
       "alternate": false,
       "reload": 30,
+      "smokeEffect": "shootSmallSmoke"
       "ejectEffect": {
         "type": "ParticleEffect",
         "particles": 1,
