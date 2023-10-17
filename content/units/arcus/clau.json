@@ -21,7 +21,7 @@
     "lifetime": 80,
     "interp": "circleOut",
     "length": 40,
-    "sizeFrom": 20
+    "sizeFrom": 5
   },
   "weapons": [
     {
@@ -55,7 +55,7 @@
         "speed": 4,
         "damage": 27,
         "homingRadius": 70,
-        "hovingPower": 0.06,
+        "homingPower": 0.09,
         "shootEffect": {
           "type": "ParticleEffect",
           "particles": 7,
