@@ -1,5 +1,5 @@
 {
-    name: "divinity-inc",
+    name: "divinity",
     repo: "rylid-umil/DivinityFactions/",
     minGameVersion: 145,
     version: "public beta",   
