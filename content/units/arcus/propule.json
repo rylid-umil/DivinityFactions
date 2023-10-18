@@ -1,0 +1,89 @@
+{
+  "name": "Propule",
+  "description": "[red]A small, medium-armored unit comprised of pod-like sections, created by the Arcus. It shoots a fast, seeking bolt of laser energy.",
+  "details": "be sniper boi",
+  "hideDetails": false,
+  "health": 1460,
+  "armor": 9,
+  "speed": 2,
+  "accel": 0.02,
+  "drag": 0.08,
+  "outlineColor": "141412ff",
+  "flying": true,
+  "targetAir": true,
+  "hitSize": 9,
+  "commandLimit": 8,
+  "lowAltitude": true,
+  "circleTarget": false,
+  "deathExplosionEffect": {
+    "type": "ParticleEffect",
+    "particles": 12,
+    "colorFrom": "FF6666FF",
+    "colorTo": "FF6666FF",
+    "lifetime": 80,
+    "interp": "circleOut",
+    "length": 40,
+    "sizeFrom": 5
+  },
+  "weapons": [
+    {
+      "name": "propule-weapon",
+      "x": 0,
+      "y": 5,
+      "mirror": false,
+      "alternate": false,
+      "reload": 40,
+      "shootSound": "blaster",
+      "smokeEffect": "shootSmallSmoke",
+      "casingEffect": "casing2",
+      "bullet": {
+        "frontColor": "FF6666FF",
+        "backColor": "DD4444FF",
+        "lifetime": 65,
+        "damage": 128,
+        "speed": 5,
+        "homingRange": 42,
+        "homingPower": 0.06,
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "colorFrom": "FF6666FF",
+          "colorTo": "FF6666FF",
+          "line": false,
+          "lifetime": 11,
+          "length": 19,
+          "sizeFrom": 17,
+          "interp": "circleOut"
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "colorFrom": "FF6666FF",
+              "colorTo": "FF6666FF",
+              "line": false,
+              "lifetime": 16,
+              "length": 12,
+              "sizeFrom": 16,
+              "interp": "circleOut"
+            },
+            {
+              "type": "WaveEffect",
+              "sizeTo": 11,
+              "colorFrom": "FF6666FF",
+              "colorTo": "FF6666FF"
+            }
+          ]
+        },
+        "despawnEffect": "none",
+        "despawnHit": true,
+        "hitSound": "explosion",
+        "splashDamageRadius": 13,
+        "splashDamage": 13,
+        "status": "divinity-laser-shocked"
+      }
+    }
+  ]
+}
